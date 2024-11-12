@@ -40,7 +40,6 @@ document.getElementById('contactForm').addEventListener('submit', function(event
   })
   .then(response => response.json())
   .then(data => {
-    console.log(data)
     if (data.success) {
       // Optional: Show a success message
       document.getElementById('submitSuccessMessage').style.display = 'block';
